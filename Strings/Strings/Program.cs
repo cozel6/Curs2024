@@ -27,15 +27,14 @@ public static class Program
 
         string firstName = "Ionel";
         string lastName = "Popescu";
-
         string fullName = firstName + " " + lastName;
         Console.WriteLine(fullName);
-
         string nameFullConcat = String.Concat(firstName," ",lastName);
         Console.WriteLine(nameFullConcat);
+        Console.WriteLine($"{firstName} {lastName}");
 
         //interpolare
-        Console.WriteLine($"{firstName} {lastName}");
+
         #endregion
 
 
