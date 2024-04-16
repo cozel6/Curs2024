@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Globalization;
 using System.Numerics;
 using System.Text;
 
@@ -131,7 +132,7 @@ public static class Program
         StringBuilder stringBuilder = new StringBuilder();
 
 
-        var stopWatch2 = new Stopwatch();
+        /*var stopWatch2 = new Stopwatch();
         string myCoolString = "Counting bottle:";
 
         stopWatch2.Start();
@@ -143,12 +144,59 @@ public static class Program
             stringBuilder.Append(i.ToString());
             //Console.WriteLine(i);
         }
+*/
+        //Console.WriteLine(stringBuilder.ToString()); // 0.0546481 sec 10.000 numere 
+        //stopWatch2.Stop();
+        //Console.WriteLine(stopWatch2.Elapsed.TotalSeconds.ToString()); //25.1997858 sec 10.000 numere 
 
-        Console.WriteLine(stringBuilder.ToString());
-        stopWatch2.Stop();
-        Console.WriteLine(stopWatch2.Elapsed.TotalSeconds.ToString()); //25.1997858
+        #region String.Format
 
 
+        double d = 0.375;
+        string infoToDisplay = d.ToString("P2");
+        string myFormatString = string.Format("{0:F5}",d);
+
+        Console.WriteLine(infoToDisplay);
+        Console.WriteLine(myFormatString);
+
+        //Date time
+        DateTime myDate = DateTime.Now;
+        Console.WriteLine(myDate);
+
+        var myFormattedDate = string.Format("{0:d.MM.yyyy HH:mm}", myDate);
+        Console.WriteLine(myFormattedDate);
+
+        CultureInfo culture = new CultureInfo("ro-Ro");
+        Console.WriteLine(myDate.ToString("d",culture));
+
+        string myDate2 = "01.05.2024";
+       //var tomorrow = myDate.AddDays(1);
+        var tomorrow = myDate.AddDays(-1);
+
+        DateTime futtureDate = DateTime.ParseExact(myDate2, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+        var yesterday = futtureDate.AddDays(-1);
+
+        // string interpolation
+
+        string student = "Jony";
+        string age = "25";
+
+        string str = $"student {student} is {age} years old";
+        Console.WriteLine(str);
+
+        string myStudent = "Jony is \"the best\""; // escaping caracter
+        string myStudent2 = "Jony is 'the best'"; // using single quote
+        string verbatimStudent = @"Jony is ""the best""";
+        string spacedString = "This is my super long string" +
+            "yea";
+        string verbatimString = @"this
+                                    is
+                                    my 
+                                    long
+                                    string";
+        Console.WriteLine("Enter your text using quote");
+        Console.ReadLine();
+        #endregion
         #endregion
         #endregion
     }
