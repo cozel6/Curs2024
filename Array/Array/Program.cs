@@ -97,6 +97,51 @@ namespace Array
                 intArray[i] = copyArray[i];
             }
             intArray[5] = 10;
+
+            //matrix
+
+            //declare and create matrix
+            int[] array = new int[2];
+            array[0] = 1;
+            int[,] myMatrix = {
+                {1, 2},
+                {2, 3}
+            };
+
+            int[,] myMatrix2 = new int[2,2];  // o matrice de 2 pe 2
+            myMatrix2[0,0] = 1;
+            myMatrix2[0, 1] = 5;
+            //printing a matrix
+
+            for (int row = 0; row < myMatrix.GetLength(0); row++)
+            {
+                for (int column = 0; column < myMatrix.GetLength(1); column++)
+                {
+                    Console.Write(myMatrix[row, column]);
+                    Console.Write(", ");
+                }
+                Console.WriteLine();
+            }
+
+            //reading a matrix form console
+
+            Console.WriteLine("Hai sa definim matricea");
+            Console.WriteLine("Scrie nr de randuri");
+
+            int nrRows = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Scrie nr de coloane");
+            int[,] myMatrix3 = new int[nrRows, nrRows];
+
+            Console.WriteLine("Hai sa definim valorile");
+            for (int row = 0;row < myMatrix3.GetLength(0); row++)
+            {
+                for(int column = 0; column < myMatrix3.GetLength(1); column++)
+                {
+                    Console.WriteLine("Scrie val pt randu");
+                    myMatrix3[row, column] = int.Parse(Console.ReadLine());
+                }
+            }
         }
     }
 }
