@@ -1,6 +1,6 @@
-﻿using System.Runtime.Serialization.Formatters;
+﻿using System;
 
-namespace Array
+namespace Arrays
 {
     internal class Program
     {
@@ -27,9 +27,9 @@ namespace Array
             }
 
 
-           // Console.WriteLine(reverseDays[0]);
+            // Console.WriteLine(reverseDays[0]);
             //for loop
-            for (int i = 0; i  < length; i++)
+            for (int i = 0; i < length; i++)
             {
                 //Console.WriteLine(daysOfTheWeek[i]);
             } // asa poti printa un array 
@@ -43,9 +43,9 @@ namespace Array
 
             //while
             int index = 0;
-            while(index < daysOfTheWeek.Length)
+            while (index < daysOfTheWeek.Length)
             {
-               //Console.WriteLine(daysOfTheWeek[index]);
+                //Console.WriteLine(daysOfTheWeek[index]);
                 index++;
             }
 
@@ -79,7 +79,7 @@ namespace Array
             Console.WriteLine(myArayCoppy[0]);
             Console.WriteLine(daysOfTheWeek[0]);
 
-            string[] myArrayCone = (string[]) daysOfTheWeek.Clone();
+            string[] myArrayCone = (string[])daysOfTheWeek.Clone();
             myArrayCone[0] = "Duminica";
             Console.WriteLine(myArrayCone[0]);
             Console.WriteLine(daysOfTheWeek[0]);
@@ -92,7 +92,7 @@ namespace Array
 
             intArray = new int[6];
 
-            for (int i = 0;i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 intArray[i] = copyArray[i];
             }
@@ -108,8 +108,8 @@ namespace Array
                 {2, 3}
             };
 
-            int[,] myMatrix2 = new int[2,2];  // o matrice de 2 pe 2
-            myMatrix2[0,0] = 1;
+            int[,] myMatrix2 = new int[2, 2];  // o matrice de 2 pe 2
+            myMatrix2[0, 0] = 1;
             myMatrix2[0, 1] = 5;
             //printing a matrix
 
@@ -125,23 +125,53 @@ namespace Array
 
             //reading a matrix form console
 
-            Console.WriteLine("Hai sa definim matricea");
-            Console.WriteLine("Scrie nr de randuri");
+            /*Console.WriteLine("Hai sa definim matricea");
 
-            int nrRows = int.Parse(Console.ReadLine());
+            Console.WriteLine("Scrie numarul de randuri");
+            int nrRanduri = int.Parse(Console.ReadLine());
+            Console.WriteLine("Scrie numarul de coloane");
+            int nrColoane = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Scrie nr de coloane");
-            int[,] myMatrix3 = new int[nrRows, nrRows];
+            int[,] matriceaMea = new int[nrRanduri, nrColoane];
 
-            Console.WriteLine("Hai sa definim valorile");
-            for (int row = 0;row < myMatrix3.GetLength(0); row++)
+            Console.WriteLine("Hai sa definim valorile:");
+            for (int i = 0; i < nrRanduri; i++)
             {
-                for(int column = 0; column < myMatrix3.GetLength(1); column++)
+                for (int k = 0; k < nrColoane; k++)
                 {
-                    Console.WriteLine("Scrie val pt randu");
-                    myMatrix3[row, column] = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Scrie valoarea pentru randul " + i + " si coloana " + k + ":");
+                    matriceaMea[i, k] = int.Parse(Console.ReadLine());
                 }
+            }*/
+            //jagged array 
+            //Jagged arrays = este un array de array uri
+            int[][] jagged2 = new int[3][];
+
+
+            //Properties of Class array
+            string[] capitals = { "Sofia", "Bucuresti", "Londra", "Paris" };
+            Console.WriteLine($"Lungimea este de {capitals.Length}");
+            Console.WriteLine($"Numarule de dimensiuni este de {capitals.Rank}");
+            Console.WriteLine($"Numarule de dimensiuni este de{myMatrix2.Rank}");
+
+
+
+
+            Console.WriteLine($"Pozitia orasului londra este {System.Array.IndexOf(capitals,"Londra")}");
+
+            //array reverse
+            var reversed = capitals.Reverse(); // le da reverse (de la coada la cap)
+            foreach ( var city in reversed)
+            {
+                Console.WriteLine(city);
             }
+
+            Array.Sort(capitals); //le sorteaza alfabetic
+            foreach (var city in capitals)
+            {
+                Console.WriteLine($"Capiutalele sortate {city}");
+            }
+            Console.WriteLine(capitals[2]);
         }
     }
 }
