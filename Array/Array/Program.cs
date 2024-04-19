@@ -172,6 +172,9 @@ namespace Arrays
                 Console.WriteLine($"Capiutalele sortate {city}");
             }
             Console.WriteLine(capitals[2]);
+
+            //Array.Clear(capitals);
+            //Array.Sort(capitals);
         }
     }
 }
