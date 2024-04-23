@@ -1,0 +1,4 @@
+Clasa contine mai multe obiecte(instantiere a claselor)
+1. Atribute - state, prop. , fields
+2. Comportament - metode , operatii
+
