@@ -21,7 +21,6 @@
 
 
 
-
             Dog beagle = new Dog("Spot", "Beagle");
             Console.WriteLine($"{beagle.Name} - {beagle.Breed}" );
             beagle.Bark();
@@ -42,6 +41,13 @@
             var whatLevel = (int) myLevel;
             Console.WriteLine(whatLevel);
             Console.WriteLine(Breed.NotKnown);
+
+            //accest static field
+
+            var myDog = new Dog();
+            //Dog.numberOfInstances = 1; exemplu
+            Console.WriteLine($"Number of Dog instances so far is {Dog.getInstanceNumber()}");
+            Console.WriteLine($"Number of Dog instances so far is {Dog.numberOfInstances}");
         }
     }
 }

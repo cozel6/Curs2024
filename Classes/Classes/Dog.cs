@@ -33,6 +33,9 @@ namespace Classes
         public const string OWNER = "Gigi"; // compile time
         public readonly DateTime birthDate; // runtime
 
+        //Static field
+
+        public static int numberOfInstances;
 
 
         //Atribute
@@ -48,6 +51,7 @@ namespace Classes
            /* name = "Undefined";
             breed = "NotKnown";*/
            birthDate = DateTime.Now;
+           numberOfInstances++;
         }
 
         //Constructor With Parameter
@@ -55,7 +59,7 @@ namespace Classes
         {
             this.name = name;
             this.breed = breed;
-            
+            numberOfInstances++;
         }
 
 
@@ -104,6 +108,11 @@ namespace Classes
             Console.WriteLine($"woof woof, I'm {name}");
         }
 
+        //metoda statica
+        public static int getInstanceNumber()
+        {
+            return numberOfInstances;
+        }
 
 
     }
