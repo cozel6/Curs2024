@@ -35,7 +35,7 @@
         public DateTime BirthDate { get;}
 
 
-        public int Age()
+        public int Age() // GetAge()
         {
             DateTime currentDate = DateTime.Now;
             int age = currentDate.Year - BirthDate.Year;
