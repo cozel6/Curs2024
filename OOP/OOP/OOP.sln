@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulaion", "..\Encapsul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstraction", "..\Abstraction\Abstraction.csproj", "{119573BE-1477-4781-9B0B-C88224BE58D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "..\Polymorphism\Polymorphism.csproj", "{B02E116B-CC6E-42F8-B705-1D9C20968660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "..\Polymorphism\Polymorphism.csproj", "{B02E116B-CC6E-42F8-B705-1D9C20968660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercitiiIndividual", "..\ExercitiiIndividual\ExercitiiIndividual.csproj", "{C512B93B-F380-4B93-A14B-DCD5E6D9F0E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercitiiIndividual", "..\ExercitiiIndividual\ExercitiiIndividual.csproj", "{C512B93B-F380-4B93-A14B-DCD5E6D9F0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-MethodShadowing", "..\OOP-MethodHiding\OOP-MethodShadowing.csproj", "{DDB1BE4D-DAB7-49C7-8EE8-74BEC72086B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-AbstractClassExample", "..\OOP-AbstractClassExample\OOP-AbstractClassExample.csproj", "{074443C2-6BDF-47A9-BF4C-DCF088974ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Interfete", "..\OOP-Interfete\OOP-Interfete.csproj", "{C3A28F69-80F8-4F4E-9D17-FF2D5B48CDF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{C512B93B-F380-4B93-A14B-DCD5E6D9F0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C512B93B-F380-4B93-A14B-DCD5E6D9F0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C512B93B-F380-4B93-A14B-DCD5E6D9F0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB1BE4D-DAB7-49C7-8EE8-74BEC72086B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB1BE4D-DAB7-49C7-8EE8-74BEC72086B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB1BE4D-DAB7-49C7-8EE8-74BEC72086B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB1BE4D-DAB7-49C7-8EE8-74BEC72086B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074443C2-6BDF-47A9-BF4C-DCF088974ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074443C2-6BDF-47A9-BF4C-DCF088974ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074443C2-6BDF-47A9-BF4C-DCF088974ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074443C2-6BDF-47A9-BF4C-DCF088974ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A28F69-80F8-4F4E-9D17-FF2D5B48CDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A28F69-80F8-4F4E-9D17-FF2D5B48CDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A28F69-80F8-4F4E-9D17-FF2D5B48CDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A28F69-80F8-4F4E-9D17-FF2D5B48CDF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
