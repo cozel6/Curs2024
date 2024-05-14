@@ -3,6 +3,7 @@
 namespace OOP
 {
     internal class Program
+        //MOSTENIEa
     {
         static void Main(string[] args)
         {
@@ -57,9 +58,8 @@ namespace OOP
                 flayables[i].Fly();
             }
 
-            //Abstractizare
-            //incapsulare
             //polyforphism
+
 
 
         }

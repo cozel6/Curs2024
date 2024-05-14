@@ -19,7 +19,7 @@ namespace OOP
             Console.WriteLine("I'm doing tricks!");
         }
 
-        public void Bark()
+        public override void Bark() // folosind virtual
         {
             Console.WriteLine("Beagle Bark");
         }

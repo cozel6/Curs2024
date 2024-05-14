@@ -16,7 +16,7 @@ namespace OOP
             this.name = name;
         }
 
-        public void Bark()
+        public virtual void Bark() //permite prin virtual sa "suprascrie" lucruri existente
         {
             Console.WriteLine("Dog - Ham Ham");
         }
