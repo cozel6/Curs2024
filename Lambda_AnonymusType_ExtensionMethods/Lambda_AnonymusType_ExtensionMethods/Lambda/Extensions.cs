@@ -31,7 +31,7 @@ namespace Lambda
         //    return peopleInCountry;
         //}
 
-        public static List<Person> Filrer(this List<Person> persons , GroupType groupType, string value)
+        public static List<Person> Filter(this List<Person> persons , GroupType groupType, string value)
         {
             switch (groupType)
             {
@@ -47,7 +47,7 @@ namespace Lambda
                     return persons;
             }
         }
-
+        //de completat restul de cod
         public enum GroupType
         {
             Country,
