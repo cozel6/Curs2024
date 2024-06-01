@@ -47,7 +47,6 @@ namespace Lambda
                     return persons;
             }
         }
-        //de completat restul de cod
         public enum GroupType
         {
             Country,

@@ -36,7 +36,7 @@ namespace Lambda
             //}
 
 
-            /*
+            
             List<Person> people = new List<Person>()
             {
                 new Person { FirstName = "John", LastName = "Doe", City = "New York", Country = "USA" },
@@ -45,7 +45,7 @@ namespace Lambda
                 new Person { FirstName = "Emily", LastName = "Johnson", City = "Toronto", Country = "Canada" },
                 new Person { FirstName = "Michael", LastName = "Lee", City = "Sydney", Country = "Australia" }
             };
-            */
+            
             //count all people in USA
 
             //var peopleInUsa = people.Count(x => x.Country == "USA");
@@ -73,14 +73,6 @@ namespace Lambda
             {
                 Console.WriteLine("COoOooooL a is greater then b ");
             }
-
-            List<Person> people = new List<Person>
-        {
-            new Person { FirstName = "John", LastName = "Doe", Country = "USA", City = "New York" },
-            new Person { FirstName = "Jane", LastName = "Smith", Country = "Canada", City = "Toronto" },
-            new Person { FirstName = "John", LastName = "Smith", Country = "USA", City = "Los Angeles" },
-            new Person { FirstName = "Anna", LastName = "Taylor", Country = "USA", City = "New York" },
-        };
 
             List<Person> filteredByCountry = people.Filter(GroupType.Country, "USA");
             Console.WriteLine("Filtered by Country (USA):");
