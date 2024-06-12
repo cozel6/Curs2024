@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "57b4be1c-da72-4b0c-a95c-455092c2f94c",
+		"name": "MyFirstHttpRequest",
+		"description": "Building the first request collision with .NET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36224259"
+	},
+	"item": [
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5075/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Students",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "culture",
+						"value": "ro-RO"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\" : \"Cosmin\",\r\n    \"LastName\" : \"Popovici\",\r\n    \"Age\" : 20,\r\n    \"Grade\" : 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/students?gender=male",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "male"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Studens",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\" : \"Jane\",\r\n    \"LastName\" : \"Smith\",\r\n    \"Age\" : 21 ,\r\n    \"Id\" :  2,\r\n    \"Grade\" : 9.4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Head Students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/students/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5075/api/students/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5075/api/students/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5075",
+					"path": [
+						"api",
+						"students",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
